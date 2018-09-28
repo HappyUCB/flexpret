@@ -53,7 +53,7 @@ RUN apt-get update \
 ENV PATH="${PATH}:/opt/riscv-$RISCV_HASH/bin"
 
 WORKDIR /opt/
-RUN curl -LO https://github.com/pretis/flexpret/archive/master.zip \
+RUN curl -LO https://github.com/pretis/flexpret/archive/riscv-2.0.zip \
  && unzip master.zip \
  && rm master.zip \
  && cd flexpret-master \
